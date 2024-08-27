@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI-COLOR NAVBAR</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    :root {
+        --navcolor: rgb(44, 44, 44);
+        --fontcolor: rgb(255, 255, 255);
+        --hovercolor: rgb(112, 112, 112);
+        --bodycolor:rgb(102, 102, 102);
+
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .nav {
+        width: 100vw;
+        height: 50px;
+        background-color: var(--navcolor);
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+    }
+
+    .text li {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        cursor: pointer;
+        color: var(--fontcolor);
+        font-family: poppins, sans-serif;
+    }
+    body{
+        background-color: var(--bodycolor)
+
+    }
+    a{
+        text-decoration: none;
+        color:var(--fontcolor);
+        transition: color 0.3s;
+    }
+    .text a:hover{
+     color: var(--hovercolor);
+    }
+
+
+
+</style>
+
+<body>
+    <div class="nav">
+        <div class="text">
+            <li>
+                <ul><a href="#">HOME</a></ul>
+                <ul><a href="#">ABOUT</a></ul>
+                <ul><a href="#">CONTACT US</a></ul>
+                <ul><a href="#">MORE</a></ul>
+
+
+            </li>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+printf("%d pair of %d and %d\n", count, temp1, temp2);

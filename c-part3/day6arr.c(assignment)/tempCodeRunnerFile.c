@@ -1,0 +1,1 @@
+        minindex=i
